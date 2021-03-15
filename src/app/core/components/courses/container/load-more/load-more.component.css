@@ -1,0 +1,20 @@
+.load-more {
+  border: none;
+  height: 40px;
+  background-color: white;
+  margin: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-title {
+  height: 20px;
+  color: blue;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.load-more-title:hover {
+  border-bottom: 1px solid blue;
+}

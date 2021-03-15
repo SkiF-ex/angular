@@ -1,0 +1,12 @@
+.footer {
+  bottom: 0;
+  height: 80px;
+  background-color: #4a4842;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-content {
+  float: right;
+  margin: 30px 20px;
+}

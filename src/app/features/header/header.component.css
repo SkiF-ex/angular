@@ -1,0 +1,25 @@
+.header {
+  height: 60px;
+  background-color: #4a4842;
+  color: white;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+.header-links-item {
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.header-links-item:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
