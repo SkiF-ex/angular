@@ -1,0 +1,18 @@
+<section class="course-section">
+  <div class="course-section-container">
+    <div class="course-top-block">
+      <h1 class="course-title">{{item.title}}</h1>
+      <div class="course-data-container">
+        <p class="course-time course-data-item">{{item.duration}}</p>
+        <p class="course-data course-data-item">{{item.date}}</p>
+      </div>
+    </div>
+    <div class="course-content-container">
+      <p class="course-content">{{item.content}}</p>
+    </div>
+  </div>
+  <div class="course-buttons">
+    <button class="course-buttons-item">Edit</button>
+    <button (click)="onDelete()" class="course-buttons-item">Delete</button>
+  </div>
+</section>
