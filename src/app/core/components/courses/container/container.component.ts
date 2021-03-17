@@ -22,5 +22,4 @@ export class ContainerComponent implements OnInit {
       tap((data) => (this.courses = data))
     ).subscribe();
   }
-
 }
