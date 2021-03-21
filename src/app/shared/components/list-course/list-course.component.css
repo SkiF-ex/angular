@@ -11,6 +11,21 @@
   width: 85%;
 }
 
+.course-time {
+  background-image: url("./icons/clock.png");
+  padding-left: 40px;
+}
+
+.course-date {
+  background-image: url("./icons/date.png");
+  padding-left: 40px;
+}
+
+.course-time, .course-date {
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
 .course-content {
   font-size: 25px;
 }
@@ -37,6 +52,22 @@
 .course-buttons {
   margin-top: 56px;
   margin-left: 59px;
+}
+
+.course-buttons-edit {
+  background-image: url("./icons/edit.png");
+  padding-left: 10px;
+}
+
+.course-buttons-delete {
+  background-image: url("./icons/delete.png");
+  padding-left: 30px;
+}
+
+.course-buttons-edit,
+.course-buttons-delete {
+  background-repeat: no-repeat;
+  background-position: 5px;
 }
 
 .course-buttons-item {

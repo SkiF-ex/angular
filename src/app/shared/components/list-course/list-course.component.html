@@ -4,7 +4,7 @@
       <h1 class="course-title">{{item.title}}</h1>
       <div class="course-data-container">
         <p class="course-time course-data-item">{{item.duration}}</p>
-        <p class="course-data course-data-item">{{item.date}}</p>
+        <p class="course-date course-data-item">{{item.date}}</p>
       </div>
     </div>
     <div class="course-content-container">
@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="course-buttons">
-    <button class="course-buttons-item">Edit</button>
-    <button (click)="onDelete()" class="course-buttons-item">Delete</button>
+    <button class="course-buttons-item course-buttons-edit">Edit</button>
+    <button (click)="onDelete()" class="course-buttons-item course-buttons-delete">Delete</button>
   </div>
 </section>

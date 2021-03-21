@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { CoursesApiService } from '../../../services/courses-api.service';
+import { CoursesApiService } from '../../../core/services/courses-api.service';
 import { Observable } from 'rxjs';
-import { Course } from '../../../models/course.model';
+import { Course } from '../../../core/models/course.model';
 
 @Injectable()
 export class CoursesService {

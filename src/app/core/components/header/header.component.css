@@ -7,6 +7,14 @@
   justify-content: space-between;
 }
 
+.header-title {
+  background-image: url("./icons/play.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
 .header-links {
   margin-top: 7px;
   font-size: 20px;

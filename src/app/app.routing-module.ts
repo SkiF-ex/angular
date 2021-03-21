@@ -4,15 +4,15 @@ import {RouterModule, Route} from '@angular/router';
 const routes: Route[] = [
     {
       path: 'about',
-      loadChildren: () => import('../components/about/about.module').then(m => m.AboutModule)
+      loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule)
     },
     {
       path: '',
-      loadChildren: () => import('../components/courses/container.module').then(m => m.ContainerModule)
+      loadChildren: () => import('./features/courses/container.module').then(m => m.ContainerModule)
     },
     {
       path: 'add',
-      loadChildren: () => import('../components/form/form.module').then(m => m.FormModule)
+      loadChildren: () => import('./features/form/form.module').then(m => m.FormModule)
     }
   ];
 

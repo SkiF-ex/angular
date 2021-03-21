@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {Course} from '../../../models/course.model';
+import {Course} from '../../../core/models/course.model';
 import {CoursesService} from '../service/courses.service';
 import {switchMap, tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-cont',
   templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css']
 })
 export class ContainerComponent implements OnInit {
   courses: Course[] = [];

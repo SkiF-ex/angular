@@ -16,4 +16,4 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [CommonModule, RouterModule]
 })
-export class FeaturesModule { }
+export class ComponentsModule { }

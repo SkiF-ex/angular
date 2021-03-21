@@ -7,6 +7,8 @@
 }
 
 .footer-content {
+  font-size: 25px;
+  color: gray;
   float: right;
   margin: 30px 20px;
 }
