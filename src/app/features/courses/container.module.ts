@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ContainerComponent } from './container/container.component';
 import { ContainerRoutingModule } from './container.routing-module';
 import {CoursesService} from './service/courses.service';

@@ -12,12 +12,12 @@
 }
 
 .course-time {
-  background-image: url("./icons/clock.png");
+  background-image: url("../../../../assets/clock.png");
   padding-left: 40px;
 }
 
 .course-date {
-  background-image: url("./icons/date.png");
+  background-image: url("../../../../assets/date.png");
   padding-left: 40px;
 }
 
@@ -55,12 +55,12 @@
 }
 
 .course-buttons-edit {
-  background-image: url("./icons/edit.png");
+  background-image: url("../../../../assets/edit.png");
   padding-left: 10px;
 }
 
 .course-buttons-delete {
-  background-image: url("./icons/delete.png");
+  background-image: url("../../../../assets/delete.png");
   padding-left: 30px;
 }
 

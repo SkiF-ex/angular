@@ -7,12 +7,17 @@ const routes: Route[] = [
       loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule)
     },
     {
-      path: '',
+      path: 'courses',
       loadChildren: () => import('./features/courses/container.module').then(m => m.ContainerModule)
     },
     {
-      path: 'add',
+      path: 'courses/add',
       loadChildren: () => import('./features/form/form.module').then(m => m.FormModule)
+    },
+    {
+      path: '',
+      redirectTo: 'courses',
+      pathMatch: 'full'
     }
   ];
 

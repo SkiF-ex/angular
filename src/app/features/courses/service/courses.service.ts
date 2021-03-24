@@ -12,7 +12,7 @@ export class CoursesService {
     return this.coursesApiService.getCourses();
   }
 
-  deleteCourse(id) {
+  deleteCourse(id): Observable<{}> {
     return this.coursesApiService.deleteCourse(id);
   }
 }

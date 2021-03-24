@@ -1,25 +1,25 @@
 {
-  "courses" : [
+  "courses": [
     {
       "id": 0,
       "title": "DUIS MOLLIT REPREHENDERIT AD",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "duration": "2h 37min",
+      "duration": 137,
       "date": "28 Sep, 2017"
     },
     {
       "id": 1,
       "title": "MAGNA EXCEPTEUR AUTE DEFERUNT",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "duration": "3h 37min",
+      "duration": 197,
       "date": "31 May, 2016"
     },
     {
       "id": 2,
       "title": "MAGNA EXCEPTEUR AUTE DEFERUNT",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "duration": "3h 37min",
-      "date": "31 May, 2016"
+      "duration": 198,
+      "date": "23 Mar, 2021"
     }
   ]
 }

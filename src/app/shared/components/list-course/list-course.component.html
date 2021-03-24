@@ -1,9 +1,9 @@
-<section class="course-section">
+<section appFreshPost [date]="item.date"  class="course-section">
   <div class="course-section-container">
     <div class="course-top-block">
       <h1 class="course-title">{{item.title}}</h1>
       <div class="course-data-container">
-        <p class="course-time course-data-item">{{item.duration}}</p>
+        <p class="course-time course-data-item">{{item.duration | time}}</p>
         <p class="course-date course-data-item">{{item.date}}</p>
       </div>
     </div>
