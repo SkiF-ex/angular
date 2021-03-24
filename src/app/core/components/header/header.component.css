@@ -8,7 +8,7 @@
 }
 
 .header-title {
-  background-image: url("./icons/play.png");
+  background-image: url("../../../../assets/play.png");
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 50px;
