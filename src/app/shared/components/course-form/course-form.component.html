@@ -1,0 +1,91 @@
+<form [formGroup]="courseForm" class="form">
+  <h1 class="form-title">New course</h1>
+  <div class="input-container">
+    <div class="input-top-container">
+      <p class="input-title">Title:</p>
+      <p class="input-required">*required</p>
+    </div>
+    <input
+      class="form-title-input"
+      type="text"
+      formControlName="title"
+      placeholder="Some title:" />
+    <span class="error"
+          [hidden]="!courseForm.get('title').hasError('required')
+          || !courseForm.get('title').touched"
+    >Field is required</span>
+    <span class="error"
+          *ngIf="isTitleMaxLength"
+    >Max length 50</span>
+  </div>
+  <div class="input-container">
+    <div class="input-top-container">
+      <p class="input-title">Description</p>
+      <p class="input-required">*required</p>
+    </div>
+    <textarea
+      class="form-description-input"
+      type="text"
+      formControlName="content"
+      placeholder="Description:"></textarea>
+    <span class="error"
+          [hidden]="!courseForm.get('content').hasError('required')
+          || !courseForm.get('content').touched"
+    >Field is required</span>
+    <span class="error"
+          *ngIf="isDescriptionMaxLength"
+    >Max length 50</span>
+  </div>
+  <div class="input-container duration-container">
+    <div class="input-top-container">
+      <p class="input-title">Duration</p>
+      <p class="input-required">*required</p>
+    </div>
+    <input
+      class="form-duration-input"
+      type="text"
+      formControlName="duration"
+      value="0"/>
+    <span class="error"
+          [hidden]="!courseForm.get('duration').hasError('required')
+          || !courseForm.get('duration').touched"
+    >Field is required</span>
+    <span class="error"
+          [hidden]="!courseForm.get('duration').hasError('range')"
+    >Range 1 - 600 minutes</span>
+  </div>
+  <div class="input-container date-container">
+    <div class="input-top-container">
+      <p class="input-title">Date:</p>
+      <p class="input-required">*required</p>
+    </div>
+    <input
+      class="form-date-input"
+      formControlName="date"
+      type="text" />
+    <span class="error"
+          [hidden]="!courseForm.get('date').hasError('required')
+          || !courseForm.get('date').touched"
+    >Field is required</span>
+  </div>
+  <div class="input-container">
+    <div class="input-top-container">
+      <p class="input-title">Authors</p>
+      <p class="input-required">*required</p>
+    </div>
+    <input
+      class="form-author-input"
+      type="text"
+      formControlName="author"
+      value="Author 1"/>
+    <span class="error"
+          [hidden]="!courseForm.get('author').hasError('required')
+          || !courseForm.get('author').touched"
+    >Field is required</span>
+  </div>
+  <div class="button-container">
+    <button class="button-container-item button-cancel">Cancel</button>
+    <button *ngIf="!existed" (click)="onAdd()" [disabled]="courseForm.invalid" class="button-container-item button-save">Save</button>
+    <button *ngIf="existed" (click)="onEdit()" [disabled]="courseForm.invalid" class="button-container-item button-save">Save</button>
+  </div>
+</form>

@@ -1,11 +1,14 @@
 <div>
   <input class="search-bar-input" placeholder="Text for search" />
   <div class="add-course-button-container">
-    <button routerLink="/add" routerLinkActive="is-active" class="add-course-button">
+    <button routerLink="add" routerLinkActive="is-active" class="add-course-button">
       <h1 class="course-button-plus">+</h1>Add course
     </button>
   </div>
-  <app-list-course *ngFor="let course of courses" [item]="course" (deleted)="handleDelete($event)"></app-list-course>
+  <app-list-course *ngFor="let course of courses"
+                   [item]="course"
+                   (edit)="handleEdit($event)"
+                   (deleted)="handleDelete($event)"></app-list-course>
   <div class="load-more">
     <a class="load-more-title">LOAD MORE</a>
   </div>

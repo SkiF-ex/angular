@@ -4,4 +4,5 @@ export interface Course {
   content: string;
   duration: number;
   date: string;
+  author: string;
 }

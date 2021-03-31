@@ -10,6 +10,7 @@ export class ListCourseComponent implements OnInit {
   @Input() item: Course;
 
   @Output() deleted = new EventEmitter<number>();
+  @Output() edit = new EventEmitter<number>();
 
   constructor() { }
 
@@ -18,5 +19,9 @@ export class ListCourseComponent implements OnInit {
 
   onDelete(): void {
     this.deleted.emit(this.item.id);
+  }
+
+  onEdit(): void {
+    this.edit.emit(this.item.id);
   }
 }
