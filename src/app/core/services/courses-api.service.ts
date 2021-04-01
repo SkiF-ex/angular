@@ -14,16 +14,20 @@ export class CoursesApiService {
     return this.http.get<Course[]>(serverUrl);
   }
 
+  getCourseByTitle(value: string): Observable<Course[]> {
+    return this.http.get<Course[]>(`${serverUrl}?title_like=${value}`);
+  }
+
   getCourseById(id: number): Observable<Course> {
     return this.http.get<Course>(`${serverUrl}/${id}`);
   }
 
   addCourse(course: Course): Observable<Course> {
-    return this.http.post<Course>(`courses/`, course);
+    return this.http.post<Course>(serverUrl, course);
   }
 
   editCourseById(course: Course): Observable<Course> {
-    return this.http.put<Course>(`courses/${course.id}`, course);
+    return this.http.put<Course>(`${serverUrl}/${course.id}`, course);
   }
 
   deleteCourse(id: number): Observable<{}> {

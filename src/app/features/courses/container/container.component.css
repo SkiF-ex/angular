@@ -15,6 +15,7 @@
   background-position: 5px;
   border: none;
   font-size: 20px;
+  outline: none;
 }
 
 .add-course-button {

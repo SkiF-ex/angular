@@ -16,7 +16,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params.id;
-    if (this.id) {
+    if (!isNaN(this.id)) {
       this.courseService.getCourseById(this.id)
         .pipe(tap((course) => {
           this.course = course;

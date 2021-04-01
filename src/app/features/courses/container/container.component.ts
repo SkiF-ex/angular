@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../../core/models/course.model';
 import { CoursesService } from '../service/courses.service';
-import { switchMap, tap } from 'rxjs/operators';
+import {debounceTime, distinctUntilChanged, switchMap, tap} from 'rxjs/operators';
 import { Router } from '@angular/router';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-cont',
@@ -12,10 +13,21 @@ import { Router } from '@angular/router';
 export class ContainerComponent implements OnInit {
   courses: Course[] = [];
 
-  constructor(private coursesService: CoursesService, private router: Router) { }
+  searchControl = new FormControl('');
+
+  constructor(
+    private coursesService: CoursesService,
+    private router: Router,
+) { }
 
   ngOnInit(): void {
     this.coursesService.getCourses().subscribe((data) => this.courses = data);
+
+    this.searchControl.valueChanges
+      .pipe(debounceTime(500),
+        distinctUntilChanged(),
+        switchMap((value) => this.coursesService.getCourseByTitle(value)))
+      .subscribe((value: Course[]) => this.courses = value);
   }
 
   handleEdit(id: number): void {

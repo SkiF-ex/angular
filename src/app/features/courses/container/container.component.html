@@ -1,5 +1,5 @@
 <div>
-  <input class="search-bar-input" placeholder="Text for search" />
+  <input class="search-bar-input" type="text" [formControl]="searchControl" placeholder="Text for search" />
   <div class="add-course-button-container">
     <button routerLink="add" routerLinkActive="is-active" class="add-course-button">
       <h1 class="course-button-plus">+</h1>Add course
