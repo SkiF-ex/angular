@@ -1,1 +1,1 @@
-<app-course-form [course]="course" (edit)="editHandler($event)" (add)="addHandler($event)"></app-course-form>
+<app-course-form [course]="course$ | async" (edit)="editHandler($event)" (add)="addHandler($event)"></app-course-form>

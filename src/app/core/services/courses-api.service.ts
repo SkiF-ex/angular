@@ -11,7 +11,11 @@ export class CoursesApiService {
   constructor(private http: HttpClient) { }
 
   getCourses(): Observable<Course[]> {
-    return this.http.get<Course[]>(serverUrl);
+    return this.http.get<Course[]>(`${serverUrl}?_start=0&_end=3`);
+  }
+
+  getOneMoreCourse(end: number): Observable<Course[]> {
+    return this.http.get<Course[]>(`${serverUrl}?_start=0&_end=${end}`);
   }
 
   getCourseByTitle(value: string): Observable<Course[]> {
