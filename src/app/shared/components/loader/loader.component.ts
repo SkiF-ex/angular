@@ -1,16 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {LoaderService} from '../../../core/services/loader.service';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
-  styleUrls: ['./loader.component.css']
+  styleUrls: ['./loader.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoaderComponent implements OnInit {
-  isLoading: boolean;
-  subscription: Subscription[] = [];
-
   constructor(private loaderService: LoaderService) { }
 
   ngOnInit(): void {

@@ -84,7 +84,7 @@
     >Field is required</span>
   </div>
   <div class="button-container">
-    <button class="button-container-item button-cancel">Cancel</button>
+    <button  routerLink="/courses" routerLinkActive="is-active"  class="button-container-item button-cancel">Cancel</button>
     <button *ngIf="!existed" (click)="onAdd()" [disabled]="courseForm.invalid" class="button-container-item button-save">Save</button>
     <button *ngIf="existed" (click)="onEdit()" [disabled]="courseForm.invalid" class="button-container-item button-save">Save</button>
   </div>

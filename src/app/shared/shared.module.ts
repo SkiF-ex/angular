@@ -6,15 +6,17 @@ import { FreshPostDirective } from './directives/fresh-post.directive';
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoaderComponent } from './components/loader/loader.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [ListCourseComponent, TimePipe, FreshPostDirective, CourseFormComponent, LoaderComponent],
   exports: [
     ListCourseComponent, TimePipe, FreshPostDirective, CourseFormComponent, LoaderComponent
   ],
-  imports: [
-    CommonModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        RouterModule
+    ]
 })
 export class SharedModule { }

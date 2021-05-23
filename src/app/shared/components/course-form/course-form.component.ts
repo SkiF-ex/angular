@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { Course } from '../../../core/models/course.model';
 import {FormBuilder, Validators} from '@angular/forms';
 import {CustomValidators} from '../../validators/custom.validators';
@@ -6,7 +6,8 @@ import {CustomValidators} from '../../validators/custom.validators';
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
-  styleUrls: ['./course-form.component.css']
+  styleUrls: ['./course-form.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CourseFormComponent implements OnInit {
   @Input()

@@ -2,7 +2,7 @@
   "courses": [
     {
       "title": "DUIS MOLLIT REPREHENDERIT AD",
-      "content": "Lorem ipsum dolor sit amet, consect",
+      "content": "Lorem ipsum dolor sit amet, consec1",
       "duration": 137,
       "date": "28 Sep, 2017",
       "author": "Max",
@@ -25,11 +25,11 @@
       "author": ""
     },
     {
-      "title": "add",
-      "content": "some",
-      "duration": "112",
-      "date": "20 Mar, 2021",
-      "author": "Max",
+      "title": "1",
+      "content": "1",
+      "duration": "1",
+      "date": "1",
+      "author": "1",
       "id": 4
     }
   ]
